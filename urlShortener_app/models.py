@@ -1,10 +1,10 @@
-from operator import truediv
 from django.db import models
+from django.forms import URLField
 
 # Create your models here.
 class urlShortener(models.Model):
-    long_url = models.URLField(max_length=300, unique=True)
-    short_url = models.URLField(max_length=300, unique=True)
+    longurl = models.URLField(max_length=300, unique=True)
+    shorturl = models.CharField(max_length=300, unique=True, default=None)
     
     def __str__(self):
-        return self.short_url
+        return self.shorturl

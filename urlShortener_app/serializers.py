@@ -1,7 +1,8 @@
 from rest_framework.serializers import ModelSerializer
+from .models import urlShortener
 
 
 class urlShortenerSerializer(ModelSerializer):
     class Meta:
-        model = 'urlShortener'
-        fields = '__all__'
+        model = urlShortener
+        fields = ['longurl', 'shorturl']

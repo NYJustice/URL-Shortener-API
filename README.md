@@ -47,7 +47,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Simple URL sahortener API built with Django.
+Simple URL shortener API built with Django.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
